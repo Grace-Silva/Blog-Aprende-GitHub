@@ -1,0 +1,80 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+  :root{
+    --blue: #0091c6;
+    --white: #fff4ee;
+    --black: #1f1f1f;
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+  }
+
+  body{
+    background: var(--white);
+  }
+
+  header{
+    position: fixed; /* se mantendrá por encima del contenido de toda la página*/
+    top: 0;
+    left: 0;
+    width: 100%; /* abarca todo el ancho de la página*/
+    height: 80px;
+    background: var(--white);
+    box-shadow: 0 4px 25px -22px var(--black);
+    z-index: -1;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo h1{
+    font-weight: 500;
+    color: var(--black);
+  }
+
+  .logo b{
+    color: var(--blue);
+  }
+
+  nav .menu{
+    height: 100%;
+  }
+
+  .menu ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .menu li a{
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 12px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+  .menu li a:hover{
+    color: var(--white);
+    background: var(--blue);
+    transition: .5s ease;
+  }
+
+  
