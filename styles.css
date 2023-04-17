@@ -150,6 +150,9 @@
     background: var(--silver);
     overflow: hidden;
     border: greenyellow solid;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   article::before{
@@ -166,6 +169,11 @@
     color: var(--blue);
   }
 
-  img{
+  article img{
+    width: 100%;
     border: solid green;
+  }
+
+  article p{
+    float: right;
   }
