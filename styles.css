@@ -2,10 +2,12 @@
 
   :root{
     --blue: #0091c6;
-    --blue2: #005ac6;
+    --blue2: #00689a;
     --white: #fff4ee;
     --black: #1f1f1f;
-    --global-padding: 20px 40px;
+    --silver: #e6f4f1;
+    --global-padding: 20px 20px;
+    --global-margin: 20px 20px;
   }
 
   *{
@@ -13,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;    text-decoration: none;
+  }
+  body{
+    background: var(--white);
   }
 
   h1, h1{
@@ -28,10 +33,11 @@
     top: 0;
     left: 0;
     width: 100%; /* abarca todo el ancho de la página*/
-    height: 80px;
+    height: auto;
     background: var(--white);
     box-shadow: 0px 4px 25px -22px var(--blue);
     z-index: 1;
+    padding: 12px 20px;
   }
 
   .container{
@@ -39,7 +45,7 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    border: solid red;
+    border: solid greenyellow;
   }
 
   .logo{
@@ -47,6 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 12px 20px;
   }
 
   .logo h1{
@@ -88,11 +95,11 @@
   .cover{
     width: 100%;
     height: 500px;
+    margin-top: 80px;
     position: relative;
-    top: 80px;
     background-image: linear-gradient(180deg, rgba(7,17,29,0.5) 0%, rgba(7,17,29,0.5) 100%), url('./img/background.jpg');
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -125,4 +132,40 @@
     transform: scale(1.1);
   }
 
-.
+  /* articles section */
+  .articles{
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding: var(--global-padding);
+    color: var(--black);
+  }
+
+  article{
+    width: 100%;
+    position: relative;
+    margin: var(--global-margin);
+    padding: var(--global-padding);
+    border-radius: 25px;
+    background: var(--silver);
+    overflow: hidden;
+    border: greenyellow solid;
+  }
+
+  article::before{
+    content: "";
+    width: 100%;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--blue);
+  }
+
+  article h1{
+    color: var(--blue);
+  }
+
+  img{
+    border: solid green;
+  }
