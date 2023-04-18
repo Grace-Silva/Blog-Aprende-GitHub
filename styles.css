@@ -40,6 +40,29 @@
     color: var(--black);
   }
 
+  #bars{
+    color: var(--black);
+    position: absolute;
+    font-size: 18px;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    background: var(--silver);
+    border-radius: 100%;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    display: none;
+}
+
+#bars:hover{
+    color: var(--white);
+    background: var(--blue);
+    transition: .5s ease;
+}
   .container{
     max-width: 1200px;
     margin: auto;
@@ -242,3 +265,14 @@
     font-size: 14px;
     opacity: 50%;
   }
+
+  /* responsive design */
+@media screen and(max-width:1220px) {
+  
+  .container{
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+
+
+}
